@@ -38,17 +38,17 @@ router.beforeEach((to, from, next) => {
   if (redirectList.includes(to.path)) {
     next()
   } else {
-    document.title =
-      (to.meta.title && `${to.meta.title} - mmPlayer在线音乐播放器`) || 'mmPlayer在线音乐播放器'
+    document.title =k
+      (to.meta.title && `${to.meta.title} - kmPlayer在线音乐播放器`) || 'kmPlayer在线音乐播放器'
     next()
   }
 })
 
 // 版权信息
-window.mmPlayer = window.mmplayer = `欢迎使用 mmPlayer!
+window.mmPlayer = window.mmplayer = `欢迎使用 kmPlayer!
 当前版本为：V${VERSION}
-作者：茂茂
-Github：https://github.com/maomao1996/Vue-mmPlayer
+作者：克喵爱吃卤面
+Github：https://github.com/Kemeow815/Vue-mmPlayer_kemiao
 歌曲来源于网易云音乐 (https://music.163.com)`
 // eslint-disable-next-line no-console
 console.info(`%c${window.mmplayer}`, `color:blue`)
