@@ -38,7 +38,7 @@ router.beforeEach((to, from, next) => {
   if (redirectList.includes(to.path)) {
     next()
   } else {
-    document.title =k
+    document.title =
       (to.meta.title && `${to.meta.title} - kmPlayer在线音乐播放器`) || 'kmPlayer在线音乐播放器'
     next()
   }
